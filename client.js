@@ -7,7 +7,7 @@ const proto = grpc.load ({
   file: './proto/leave.proto'
 });
 
-const client = new proto.policy.EmployeeLeaveDaysService('172.16.66.145:50050', grpc.credentials.createInsecure());
+const client = new proto.policy.EmployeeLeaveDaysService('localhost:50050', grpc.credentials.createInsecure());
 
 const employees = {
   valid: {
